@@ -1,0 +1,250 @@
+* {
+    margin:0;
+    padding:0;
+   
+}
+
+
+@font-face {
+    font-family:"AnekTamil";
+    src: url("../fonts/AnekTamil.ttf");
+}
+@font-face {
+    font-family:"AnekTamil-ExtraLight";
+    src: url("../fonts/static/AnekTamil-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family:"Inter";
+    src: url("../fonts/static/Inter_18pt-ExtraLight.ttf");
+}
+
+html, body {
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(220,210,231,1) 33%, rgba(176,152,201,1) 100%);
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    font-family: "AnekTamil";
+    font-size: 65px;
+    color: #613092;
+    margin: 50px auto 0px;
+    display: inline-block;
+   
+    
+}
+
+h2{
+    font-family: "AnekTamil-ExtraLight";
+    color: #613092;
+    font-size: 35px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: "AnekTamil-ExtraLight";
+    color: #613092;
+    font-size: 35px;
+    text-align: left;
+    margin-left: 60px;
+
+}
+
+h3 a:hover {
+    color: #8a17e7;
+}
+
+.typingSection {
+    background-color: white;
+    border: 3px solid #613092;
+    border-radius: 5px;
+    width: 80vw;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 3px 3px 20px 1px black;
+
+    
+}
+
+
+.text {
+    font-family: "AnekTamil-ExtraLight";
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 10px;
+    overflow-y: auto;
+    height: 130px;
+    user-select: none; 
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    overflow: hidden;
+    
+}
+
+.typingSection .time h2{
+    text-align: left;
+    margin-left: 20px;
+    display: inline;
+}
+
+.time {
+    width: 10vw;
+    position: relative;
+    transform: translateY(10vh);
+}
+.userTyping{
+    margin-top: 10px;
+}
+
+
+.correct{
+    color: #39FF14;
+}
+
+.wrong {
+    color: red;
+    text-decoration: underline;
+}
+
+
+.userTyping input[type=text] {
+    width: 20vw;
+    height: 4vh;
+    border: 3px solid black;
+    border-radius: 5px;
+    transition: 0.5s;
+    font-family: "AnekTamil-ExtraLight";
+    font-weight: bold;
+    font-size: 1.438rem;
+    padding-left: 20px;
+}
+
+.userTyping input::placeholder {
+    font-family: "AnekTamil-ExtraLight";
+    font-size: 1.438rem;
+    font-weight: bold;
+    color: #D3D3D3;
+}
+
+.userTyping input[type=text]:focus {
+    border: 3px solid #8a17e7;
+    outline: none;
+}
+
+.reset {
+    background-color: #613092;
+    font-family: "AnekTamil-ExtraLight";
+    color: white;
+    cursor: pointer;
+    border: 1px solid #613092;
+    border-radius: 10px; 
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 7vw;
+    height: 4vh;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+.reset:hover {
+    background-color: #502276;
+    transform: translateY(-2px);
+}
+
+
+.results {
+    background-color: white;
+    border: 3px solid #613092;
+    border-radius: 5px;
+    width: 30vw;
+    height: 27vh;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    box-shadow: 3px 3px 20px 1px black;
+}
+
+
+.results h1 {
+    font-size: 2rem;
+    color: #613092;
+    margin: auto;
+    margin-top: 7px;
+}
+
+
+.UserStats h2 {
+    font-size: 1.875rem;
+    text-align: center;
+    text-decoration: underline;
+    display: block;
+}
+
+.UserStats li {
+    font-family: "AnekTamil-ExtraLight";
+    color: #613092;
+    font-size: 1.875rem;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 6vw;
+    }
+    h2 {
+        font-size: 4vw;
+    }
+    h3 {
+        font-size: 3vw;
+    }
+    .typingSection {
+        padding: 10px;
+        width: 90%;
+    }
+    .text p {
+        font-size: 1rem;
+    }
+    .userTyping input[type=text] {
+        width: 30%;
+        font-size: 0.875rem;
+    }
+    .reset {
+        font-size: 0.875rem;
+        width: 10vw;
+    }
+    .results {
+        width: 90%;
+    }
+    .UserStats h2, .UserStats li{
+        font-size: 0.8rem;
+       }
+}
+

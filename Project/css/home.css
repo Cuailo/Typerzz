@@ -1,0 +1,372 @@
+* {
+    margin:0;
+    padding:0;
+   
+}
+
+
+@font-face {
+    font-family:"AnekTamil";
+    src: url("../fonts/AnekTamil.ttf");
+}
+@font-face {
+    font-family:"AnekTamil-ExtraLight";
+    src: url("../fonts/static/AnekTamil-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family:"Inter";
+    src: url("../fonts/static/Inter_18pt-ExtraLight.ttf");
+}
+
+
+body {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(220,210,231,1) 33%, rgba(176,152,201,1) 100%);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+}
+
+html, body {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    font-family: "AnekTamil";
+    font-size: 65px;
+    color: #613092;
+    margin: 50px auto 0px;
+    display: inline-block;
+   
+    
+}
+
+h2{
+    font-family: "AnekTamil-ExtraLight";
+    color: #613092;
+    font-size: 35px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: "AnekTamil-ExtraLight";
+    color: #613092;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 40px;
+    font-size: 35px;
+
+}
+
+h3 a:hover {
+    color: #8a17e7;
+}
+
+h4{
+    font-family: "AnekTamil-ExtraLight";
+    color: #613092;
+    padding-top: 20px;
+    display: inline-block;
+    font-size: 48px;
+}
+
+
+h5{
+    font-family: "AnekTamil";
+    color: #613092;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.tests, .statistics, .leaderboard { 
+    background-color: white;
+    border: 5px solid #613092;
+    border-radius: 10px;
+    width: 500px;
+    height: 700px;
+    display:inline-block;
+    box-shadow: 3px 3px 20px 1px black;
+    overflow: hidden;
+}
+
+.tests, .statistics{
+    margin-right: 80px;
+}
+
+
+.test-easy, .test-hard {
+    background-color: white;
+    border: 5px solid #613092;
+    border-radius: 5px;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.test-easy:hover, .test-hard:hover {
+    transform: translateY(-2px);
+    border-color:#8a17e7;
+}
+
+.test-hard { 
+    margin-top: 80px;
+}
+
+.test-easy h4, .test-hard h4 {
+    padding-top: 0px;
+    font-size: 35px;
+}
+
+.tests a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+
+
+ul li{
+    font-family: "AnekTamil-ExtraLight";
+    color: black;
+    font-weight: bold;
+    font-size: 28px;
+    margin-left: 10px;
+    display: block;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+ul li img {
+    height: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+ h6 {
+    font-size: 40px;
+    font-family: "AnekTamil-ExtraLight";
+    color: #613092;
+    border-bottom: 3px solid black;
+    width: 250px;
+    margin: auto;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.statistics h2{
+    margin-top: 40px;
+    margin-left: 30px;
+    text-align: left;
+
+}
+
+.statisticsButtons {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.statistics .statisticsButtons h6 {
+    margin: 0;
+    width: 100px;
+    border: none;
+}
+
+.statisticsButtonsWhole {
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid #613092;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.statisticsButtonsLeft {
+    border-right: 3px solid #613092;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.statisticsButtonsWhole:hover, .statisticsButtonsLeft:hover {
+    border-color: #8a17e7;
+}
+ .statisticsButtons h6:hover {
+    background-color: #8a17e7;
+    color: white;
+    cursor: pointer;
+ }
+
+
+
+@media (max-width: 768px) {
+    .tests, .statistics, .leaderboard {
+        width: 90%; 
+        height: auto; 
+        margin: 10px auto; 
+    }
+
+    h1 {
+        font-size: 45px; 
+    }
+
+    h2, h3 {
+        font-size: 25px; 
+    }
+
+    h4 {
+        font-size: 30px; 
+    }
+
+    .test-easy, .test-hard {
+        width: 90%; 
+        height: auto; 
+    }
+
+    ul li {
+        font-size: 24px; 
+    }
+
+    h6 {
+        font-size: 30px; 
+    }
+    
+
+    .statisticsButtons, .LeaderboardButtons {
+        padding: 0 !important;
+    }
+
+
+    h3 {
+        position: static;
+        text-align: left;
+        margin: 20px;
+    }
+}
+
+
+
+
+
+.LeaderboardButtons {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.leaderboard .LeaderboardButtons h6 {
+    margin: 0;
+    width: 100px;
+    border: none;
+
+}
+
+.LeaderboardButtonsWhole {
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid #613092;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.LeaderboardButtonsleft {
+    border-right: 3px solid #613092;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.LeaderboardButtonsWhole:hover, .LeaderboardButtonsleft:hover {
+    border-color: #8a17e7;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+}
+ .leaderboard h6:hover {
+    background-color: #8a17e7;
+    color: white;
+    cursor: pointer;
+ }
+
+
+.tableBox {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+.tg  {
+    border-collapse:collapse;
+    border-spacing:0;
+    border-radius: 5px; 
+    overflow: hidden;  
+    width: 400px;
+}
+.tg td{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-family:"AnekTamil-ExtraLight";
+    font-size:10px;
+    overflow:hidden;padding:5px 5px;
+    word-break:normal;
+}
+.tg th{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-family:"AnekTamil-ExtraLight";
+    font-size:10px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:5px 10px;
+    word-break:normal;
+    font-weight: bold;
+    color: #8a17e7;
+}
+.tg .dataTable {
+    border:3px solid;
+    border-color:#613092;
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:top
+
+}
+
+
+.easyLeader {
+    display: contents;
+}
+
+.hardLeader {
+    display: none;
+}
+
+.EasyStat {
+    display: contents;
+}
+
+.HardStat {
+    display: none;
+}
+
+
+
+
+h6.active {
+    background-color: #8a17e7 !important;
+    color: white !important;
+}
+

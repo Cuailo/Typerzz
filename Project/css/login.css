@@ -1,0 +1,253 @@
+* {
+    margin:0;
+    padding:0;
+   
+}
+
+@font-face {
+    font-family:"AnekTamil";
+    src: url("../fonts/AnekTamil.ttf");
+}
+@font-face {
+    font-family:"AnekTamil-ExtraLight";
+    src: url("../fonts/static/AnekTamil-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family:"Inter";
+    src: url("../fonts/static/Inter_18pt-ExtraLight.ttf");
+}
+
+
+h1 {
+    font-family:"AnekTamil";
+    color: #613092;
+    font-size: 72px;
+    text-align: center;
+}
+
+h2 {
+    font-family:"AnekTamil-ExtraLight";
+    color: #613092;
+    font-size: 36px;
+    text-align: center;
+    margin-top: -15px;
+}
+
+
+
+
+    body {
+        background-image: linear-gradient(
+            to bottom right,
+            #1E34FA 0%, #7462ff 40%, #1E34FA 60%, #7462ff 80%, #1E34FA 100%
+
+        );
+        background-size: 200% 200%;
+        animation: movingGradient 5s linear infinite alternate;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100;
+        padding: 26.5px;
+        background-color: purple;
+    }
+
+    @keyframes movingGradient {
+        from { background-position: 0 0;}
+        to {background-position: 50% 50%;}
+    }
+
+
+.Wholelogin {
+    background-color: white;
+    width: 450px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 200px;
+    border: none;
+    outline: none;
+    border: 3px solid #613092;
+    border-radius: 10px;
+    margin: 140px; 
+}
+.WholeSignup {
+    background-color: white;
+    width: 450px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 300px;
+    border: none;
+    outline: none;
+    border: 3px solid #613092;
+    border-radius: 10px;
+    margin: 85px; 
+}
+.login-headings {
+    padding: 0px; 
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.LoginForm {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: top 80px;
+    width: 100%;
+
+}
+
+.LoginForm .input-box { 
+    width: 315px;
+    height: 50px;
+    margin-bottom:50px;
+    
+}
+
+.input-box input {
+    width: 100%;
+    height: 95%;
+    outline: none;
+    border: 3px solid #A0A0A0;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "AnekTamil";
+    color: #613092;
+    transition: 0.5s;
+    padding-left: 5px;
+    
+
+}
+
+
+h3{
+    font-family: "Inter";
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+ .register-link p {
+    font-family: "Inter";
+    font-size: 20px;
+    width:100%;
+ }
+ .register-link a {
+    font-family: "Inter";
+    color: #613092;
+    width:100%;
+ }
+ .register-link {
+    margin-bottom:40px;
+    width:100%;
+    text-align: center;
+}
+ 
+
+ .btn { 
+    width:100%;
+    height:60px;
+    align-items: center;
+    font-family: "AnekTamil";
+    font-size: 25px;
+    background-color: #613092;
+    border: 1px solid #613092;
+    border-radius: 10px; 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+ 
+.btn:hover {
+    background-color: #502276;
+    transform: translateY(-2px);
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    border: 3px solid #613092;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+
+.password-container img {
+    position: absolute;
+    right: 10px;
+    top: 53%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;  
+    height: 20px;  
+
+}
+
+
+.password1 img {
+    position: absolute;
+    right: 10px;
+    top: 53%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;  
+    height: 20px;  
+
+}
+
+.password1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom:20px;
+}
+
+.password2 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    
+}
+
+.errorText {
+    font-family: "AnekTamil";
+    font-size: 15px;
+    color:red; 
+    display:none;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 8vw; 
+    }
+    h2 {
+        font-size: 5vw; 
+    }
+    .btn {
+        font-size: 4vw; 
+    }
+    .Wholelogin {
+        width: 350px;
+        margin: auto;
+    }
+
+    .WholeSignup {
+        width: 350px;
+        margin: auto;
+    }
+}
+
