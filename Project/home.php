@@ -1,6 +1,13 @@
 <?php 
   session_start();
 
+    echo time();
+	  header("Cache-Control: no-store, no-cache, must-revalidate"); // HTTP/1.1
+    header("Cache-Control: post-check=0, pre-check=0", false);
+    header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Date in the past
+    header("Pragma: no-cache"); // HTTP/1.0
+    header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+
   if (!$_SESSION['logged_in']) {
     header("Location: ./Login.php");
     exit();
@@ -112,4 +119,5 @@
     </section>
   <script src = "./javascript/HomeFunctions.js?v=<?php echo time(); ?>"></script>
   </body>
+
   </html>
