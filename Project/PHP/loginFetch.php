@@ -27,13 +27,13 @@ if (isset($_POST['login'])) {
         } else {
             echo '<script>
                 alert("Login failed: Invalid username or password");
-                window.location.href = "../login.php";
+                window.location.href = "../Login.php";
             </script>';
         }
     } else {
         echo '<script>
             alert("Login failed: Invalid username or password");
-            window.location.href = "../login.php";
+            window.location.href = "../Login.php";
         </script>';
     }
 
@@ -42,3 +42,4 @@ if (isset($_POST['login'])) {
 
 mysqli_close($conn);
 ?>
+
