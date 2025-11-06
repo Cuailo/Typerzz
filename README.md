@@ -1,4 +1,4 @@
-Users passwords are hashed on sccount creation and prepared SQL statements are used to prevent SQL injection
+Users passwords are hashed on account creation and prepared SQL statements are used to prevent SQL injection
 <img width="1756" height="937" alt="Picture1" src="https://github.com/user-attachments/assets/9554f10d-3aed-40f7-9fd3-61edf91ef902" />
 <img width="1197" height="639" alt="image_2025-11-04_204047354(2)" src="https://github.com/user-attachments/assets/c64a54e2-c32f-4300-ad52-3fe10bd66a35" />
 <img width="781" height="413" alt="Picture2" src="https://github.com/user-attachments/assets/a1137917-9851-4f3b-bb8e-0a4d308d5ebb" />
