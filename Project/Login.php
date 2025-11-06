@@ -39,7 +39,7 @@
               <?php if (isset($error)): ?>
                 <div><?php echo $error; ?></div>
               <?php endif; ?>
-                <p>Don't have an account? <b><a href="http://localhost/computing_project/signUp.php">Create one</a></b></p>
+                <p>Don't have an account? <b><a href="http://localhost/computing_project/SignUp.php">Create one</a></b></p>
               </div>
 
             <button type = "submit" class="btn" name="login"><b>Log In</b></button>
@@ -52,4 +52,5 @@
     </main>
     <script src = "./javascript/LoginFunctions.js?v=<?php echo time(); ?>"></script>
   </body>
+
 </html>
