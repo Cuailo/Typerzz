@@ -1,5 +1,11 @@
 <?php
   session_start();
+    echo time();
+	  header("Cache-Control: no-store, no-cache, must-revalidate"); 
+    header("Cache-Control: post-check=0, pre-check=0", false);
+    header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); 
+    header("Pragma: no-cache"); 
+    header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
 
   if (!$_SESSION['logged_in']) {
     header("Location: ./Login.php");
@@ -61,4 +67,5 @@
         ?>
     </main>
   </body>
+
   </html>
