@@ -80,7 +80,7 @@
         <h6>Best Test</h6>
         <h2>WPM: <?php echo $bestWPM;?></h2>
         <h2>Leaderboard Position: <?php echo $rank;?> </h2>
-        <h6>Average Test:</h6>
+        <h6>Average Test</h6>
         <h2>WPM: <?php echo $average?></h2>
       </div>
 
@@ -121,6 +121,7 @@
   </body>
 
   </html>
+
 
 
 
